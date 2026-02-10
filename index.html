@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Santra Ltd</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="site-logo"><img src="assets/img1.png" alt="Santra Ltd Logo"></div>
+
+    <button class="hamburger" id="hamburger" aria-label="Menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+    </button>
+
+    <div class="nav-overlay" id="navOverlay" onclick="toggleMenu()"></div>
+    <nav class="nav-drawer" id="navDrawer">
+        <a href="#hero" onclick="toggleMenu()">Home</a>
+        <a href="#about" onclick="toggleMenu()">About</a>
+        <a href="#services" onclick="toggleMenu()">Services</a>
+        <a href="#testimonials" onclick="toggleMenu()">Testimonials</a>
+        <a href="#team" onclick="toggleMenu()">Team</a>
+        <a href="#contact" onclick="toggleMenu()">Contact</a>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <img class="hero-bg" src="assets/img2.jpeg" alt="Financial District skyline">
+        <div class="hero-grain"></div>
+        <div class="hero-content">
+            <div class="hero-accent"></div>
+            <div class="hero-label">Chartered Accountants &bull; Edinburgh</div>
+            <h1 class="hero-title"><span>Santra</span><span class="outline-text">Ltd</span></h1>
+            <p class="hero-tagline">Expert chartered accountants delivering cross&#8209;border tax advisory, digital compliance, and strategic financial support for growing businesses.</p>
+            <div class="hero-credentials">
+                <div class="credential-badge"><div class="credential-icon">&#10003;</div><span class="credential-text">FCCA Qualified</span></div>
+                <div class="credential-badge"><div class="credential-icon">&#10003;</div><span class="credential-text">ACMA CGMA</span></div>
+                <div class="credential-badge"><div class="credential-icon">&#10003;</div><span class="credential-text">UK &bull; US &bull; NRI</span></div>
+            </div>
+        </div>
+        <div class="scroll-indicator"><span>Scroll</span><div class="scroll-line"></div></div>
+    </section>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <div class="main-content">
+
+        <!-- ABOUT -->
+        <section class="full-section about" id="about">
+            <div class="about-inner">
+                <div class="about-header">
+                    <div class="about-eyebrow reveal">Who We Are</div>
+                    <h2 class="about-main-title reveal">About Us</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-img-col reveal"><img src="assets/img3.jpeg" alt="Team brainstorming in office"></div>
+                    <div class="about-text-col">
+                        <div class="about-gold-line reveal"></div>
+                        <p class="about-body reveal">We deliver efficient, cost-effective accounting services powered by expert chartered accountants and technology. Our team brings together deep expertise in UK accounting standards, cross&#8209;border tax considerations, and modern digital compliance.</p>
+                        <p class="about-highlight reveal">Whether you're scaling your business, expanding internationally, or looking for dependable day&#8209;to&#8209;day support — we're here to help.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY CHOOSE US -->
+        <section class="full-section why-section" id="why">
+            <div class="why-inner">
+                <div class="why-header">
+                    <div class="why-eyebrow reveal">Our Strengths</div>
+                    <h2 class="why-title reveal">Why Choose Santra</h2>
+                </div>
+                <div class="pillars-grid">
+                    <div class="pillar reveal">
+                        <div class="pillar-num">01</div>
+                        <div class="pillar-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+                        <div class="pillar-title">Cross-Border Expertise</div>
+                        <div class="pillar-desc">Seamless accounting and tax advisory across the UK, United States, and for NRI clients — navigating complex multi-jurisdiction requirements.</div>
+                    </div>
+                    <div class="pillar reveal">
+                        <div class="pillar-num">02</div>
+                        <div class="pillar-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+                        <div class="pillar-title">Technology Driven</div>
+                        <div class="pillar-desc">Modern digital compliance and cloud-based accounting solutions that keep your finances accurate, accessible, and always up to date.</div>
+                    </div>
+                    <div class="pillar reveal">
+                        <div class="pillar-num">03</div>
+                        <div class="pillar-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+                        <div class="pillar-title">Strategic Advisory</div>
+                        <div class="pillar-desc">From fractional CFO services and management reporting to R&D tax claims and ESG reporting — we go beyond compliance.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACCOUNTING SERVICES -->
+        <section class="full-section services-section" id="services">
+            <div class="services-inner">
+                <h2 class="section-head reveal">Accounting Services</h2>
+                <div class="cards-row">
+                    <div class="card">
+                        <img src="assets/img4.jpg" alt="United Kingdom">
+                        <div class="card-overlay"><div class="card-overlay-content"><div class="card-title">United Kingdom</div><div class="card-gold-line"></div><ul class="card-list"><li>Bookkeeping and Accounting</li><li>Corporation Tax preparation and filing</li><li>VAT return filing</li><li>Payroll Processing</li><li>Companies House filing</li><li>Self-Assessment filing</li></ul></div></div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/img5.jpg" alt="United States">
+                        <div class="card-overlay"><div class="card-overlay-content"><div class="card-title">United States</div><div class="card-gold-line"></div><ul class="card-list"><li>Bookkeeping and Accounting</li><li>Corporation Tax form filing</li><li>Sales Tax management</li></ul></div></div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/img6.jpg" alt="NRI">
+                        <div class="card-overlay"><div class="card-overlay-content"><div class="card-title">NRI</div><div class="card-gold-line"></div><ul class="card-list"><li>Company Formation and management</li><li>Tax advisory and compliance</li><li>Bookkeeping and Accounting</li></ul></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SPECIALIST SERVICES -->
+        <section class="full-section specialist-section" id="specialist">
+            <div class="specialist-inner">
+                <h2 class="section-head white reveal">Specialist Services</h2>
+                <div class="cards-row">
+                    <div class="spec-card">
+                        <img src="assets/img7.jpg" alt="R&D Tax Claims">
+                        <div class="spec-overlay"><div class="spec-overlay-content"><div class="spec-title">R&D Tax Claims</div><div class="spec-gold-line"></div><ul class="spec-list"><li>Analysing R&D expenses</li><li>Preparing and filing R&D claim</li><li>Assisting with HMRC R&D audit</li></ul></div></div>
+                    </div>
+                    <div class="spec-card">
+                        <img src="assets/img8.jpg" alt="ESG Reporting">
+                        <div class="spec-overlay"><div class="spec-overlay-content"><div class="spec-title">ESG Reporting</div><div class="spec-gold-line"></div><ul class="spec-list"><li>Carbon Accounting</li><li>ESG report preparation</li></ul></div></div>
+                    </div>
+                    <div class="spec-card">
+                        <img src="assets/img9.jpg" alt="Management Reporting">
+                        <div class="spec-overlay"><div class="spec-overlay-content"><div class="spec-title">Management Reporting</div><div class="spec-gold-line"></div><ul class="spec-list"><li>Monthly P&amp;L and Cash flow reporting</li><li>Company specific report preparation</li><li>Monthly Management meeting</li><li>Fractional CFO service</li></ul></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section class="full-section testimonials" id="testimonials">
+            <div class="testimonials-inner">
+                <h2 class="section-head reveal">Testimonials</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-item">
+                        <p class="testimonial-text">Santra Ltd has been instrumental in securing our UK R&D tax relief, guiding us through both the claim process and HMRC audit with precision and professionalism. Their accounting services are equally reliable, offering clear insights and dependable support across our financial operations. A truly trusted partner.</p>
+                        <div class="testimonial-author">Wilhelmina Van De Lagemaat</div>
+                        <div class="testimonial-company">Lupasafe Ltd</div>
+                    </div>
+                    <div class="testimonial-item">
+                        <p class="testimonial-text">Santra Ltd consistently delivers accurate accounting and insightful management reports that keep our finances on track. Their proactive support in preparing cash flow forecasts has been essential to our planning. They've also guided us smoothly through the UK R&D tax claim process with minimal disruption. The team's professionalism and responsiveness stand out. We highly recommend their services to any business seeking dependable financial oversight.</p>
+                        <div class="testimonial-author">Jeremy Basset</div>
+                        <div class="testimonial-company">Co:Cubed Ltd</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TEAM -->
+        <section class="full-section team" id="team">
+            <div class="team-inner">
+                <h2 class="section-head reveal">Meet Our Team</h2>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <img src="assets/img10.jpeg" alt="Nikhil Chouguley">
+                        <div class="team-name">Nikhil Chouguley</div>
+                        <div class="team-role">Founder, FCCA</div>
+                        <p class="team-bio">Seasoned global risk and compliance leader. Currently a director at UN Principles for Responsible Investment (PRI), specialising in operational resilience, conduct risk, and large-scale transformation.</p>
+                        <div class="team-socials">
+                            <a href="#" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                            <a href="#" aria-label="X (Twitter)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                            <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                            <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <img src="assets/img11.jpg" alt="Hussain Hilal">
+                        <div class="team-name">Hussain Hilal</div>
+                        <div class="team-role">Management Accountant, ACMA CGMA</div>
+                        <p class="team-bio">Accomplished management accountant managing end-to-end bookkeeping, accounting, VAT, corporate tax, R&D claims, and management reporting for a diverse portfolio of UK-based clients.</p>
+                        <div class="team-socials">
+                            <a href="#" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                            <a href="#" aria-label="X (Twitter)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                            <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                            <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact-footer" id="contact">
+            <div class="contact-inner">
+                <div class="footer-top">
+                    <h2 class="contact-head reveal">Get In Touch</h2>
+                    <div class="contact-head-line reveal"></div>
+                    <p class="contact-sub reveal">Ready to simplify your finances? Let's talk.</p>
+                </div>
+                <div class="footer-grid">
+                    <div class="reveal">
+                        <img class="footer-brand-logo" src="assets/img1.png" alt="Santra Ltd">
+                        <div class="footer-brand-name">Santra <span>Ltd</span></div>
+                        <p class="footer-brand-tagline">Expert chartered accountants delivering cross-border tax advisory, digital compliance, and strategic financial support.</p>
+                    </div>
+                    <div class="reveal">
+                        <div class="footer-links-title">Quick Links</div>
+                        <ul class="footer-links">
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#why">Why Choose Us</a></li>
+                            <li><a href="#services">Accounting Services</a></li>
+                            <li><a href="#specialist">Specialist Services</a></li>
+                            <li><a href="#testimonials">Testimonials</a></li>
+                            <li><a href="#team">Our Team</a></li>
+                        </ul>
+                    </div>
+                    <div class="reveal">
+                        <div class="footer-contact-title">Contact Us</div>
+                        <div class="footer-contact-item">
+                            <div class="footer-contact-icon">&#9873;</div>
+                            <div class="footer-contact-text">Summit House, 4-5 Mitchell Street<br>Edinburgh, Scotland, EH6 7BD</div>
+                        </div>
+                        <div class="footer-contact-item">
+                            <div class="footer-contact-icon">&#9993;</div>
+                            <div class="footer-contact-text"><a href="mailto:nikhil@santra.co">nikhil@santra.co</a></div>
+                        </div>
+                        <div class="footer-contact-item">
+                            <div class="footer-contact-icon">&#9742;</div>
+                            <div class="footer-contact-text"><a href="tel:+447906635466">+44 7906635466</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-divider"></div>
+                <div class="footer-bottom">
+                    <div class="footer-copy">&copy; 2025 Santra Ltd. All rights reserved.</div>
+                    <div class="footer-bottom-right">Chartered Accountants &bull; Edinburgh</div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navDrawer').classList.toggle('open');
+            document.getElementById('navOverlay').classList.toggle('open');
+            document.getElementById('hamburger').classList.toggle('open');
+        }
+        function updateHamburger() {
+            var h = document.getElementById('hamburger');
+            var y = window.scrollY;
+            var vh = window.innerHeight;
+            if (y < vh * 0.85) { h.classList.remove('dark'); return; }
+            var darkSections = ['why', 'specialist', 'contact'];
+            var allSections = document.querySelectorAll('.full-section, .contact-footer');
+            var onDark = false;
+            var checkY = y + 50;
+            allSections.forEach(function(el) {
+                var top = el.offsetTop;
+                var bottom = top + el.offsetHeight;
+                if (checkY >= top && checkY < bottom) {
+                    var id = el.id || '';
+                    onDark = darkSections.indexOf(id) !== -1;
+                }
+            });
+            h.classList.toggle('dark', !onDark);
+        }
+        window.addEventListener('scroll', updateHamburger, { passive: true });
+        var obs = new IntersectionObserver(function(entries) {
+            entries.forEach(function(e) {
+                if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+        document.querySelectorAll('.reveal, .card, .spec-card, .testimonial-item, .team-card, .pillar, .contact-card').forEach(function(el) { obs.observe(el); });
+    </script>
+</body>
+</html>
